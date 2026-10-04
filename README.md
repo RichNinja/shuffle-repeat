@@ -1,51 +1,56 @@
-# Shuffle & Repeat
+## Shuffle & Repeat
 
-Complete static website export, ready for GitHub Pages. Includes the approved infinity-arrow intro, color cycle, zoom reveal, photo slideshow, transparent header logo, dark styling, and all current pages.
+Mix it up. Play it again.
 
-## Publish on GitHub Pages
+A digital home for Shuffle & Repeat—a Louisville live-music event project bringing artists and audiences together across genres. This website gives the group a place to share its story, showcase moments from shows, announce upcoming events, and connect with potential collaborators.
 
-1. Create a GitHub repository, for example `shuffle-repeat`.
-2. Upload the **contents of this folder** to the repository's root on the `main` branch. `index.html` must be at the root, alongside `style.css`, `site.js`, `intro-motion.js`, the other pages, and `assets/`. Upload the extracted files, not the ZIP itself.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, then **main** and **/(root)**, and save.
-5. When publishing completes, GitHub displays the site address on that page.
+Visit the website · Follow on Instagram
 
-No npm install, build command, server, or framework is required. The included `.nojekyll` file keeps this a plain static site.
+Music, people, and connection
 
-GitHub documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Shuffle & Repeat’s events celebrate local talent and the experience of discovering music together. The website carries that spirit into a space visitors can return to between shows: to explore the group, revisit the energy in the room, find event information, or start a conversation about working together.
 
-## URL compatibility
+Explore the site
 
-Links and assets use relative paths, so this works at a project address such as `https://YOUR-USERNAME.github.io/shuffle-repeat/`, a user-site address, or a custom domain. Internal navigation skips the intro, including Contact links; a fresh home-page visit or home-page refresh plays it. Reduced-motion preferences bypass the intro and automatic slideshow.
+• Home: Event photography and an introduction to Shuffle & Repeat.
+• About: The group, its purpose, and opportunities to collaborate.
+• Calendar: A home for upcoming show announcements and event details.
+• Events: Selected performance photography with links to the original posts.
+• Sponsorship: Partnership inquiries and audience-information requests.
+• Contact: A direct connection to the group through Instagram.
 
-## Files to edit
+The site is still growing. Confirmed event dates, flyers, fuller group information, and approved sponsorship details can be added as they become available.
 
-- `index.html`: Home, slideshow image list, Contact section, intro SVG.
-- `about.html`: About and partnerships section.
-- `calendar.html`: Calendar and upcoming dates.
-- `events.html`: Event images and original post links.
-- `sponsorship.html`: Sponsorship copy and audience-information section.
-- `style.css`: Colors, typography, layout, shadows, and responsive rules.
-- `site.js`: Menu, slideshow, navigation behavior, and intro timeline.
-- `intro-motion.js`: Infinity channel geometry, arrow movement, and color cycle.
-- `assets/`: Local logo and photography assets.
+The visual experience
 
-The intro's arrow motion lasts 1.5 seconds, followed by a 1-second zoom. The slideshow advances every 6.5 seconds and pauses while the menu is open or the tab is hidden. Header-logo lettering has a transparent background and a drop shadow. Google Fonts loads Barlow Condensed and DM Sans; local fallback fonts are included in the CSS font stacks.
+The infinity-arrow logo opens the site with a continuous blue, red, and green animation before revealing the event photography. A minimal dark interface keeps the focus on the music and the people, with cyan highlights and teal accents drawn from the branding.
 
-## Local preview
+The slideshow pauses when the menu is open or the browser tab is hidden. Internal navigation skips the opening animation, and reduced-motion preferences disable both the intro and automatic slideshow.
 
-From this folder, run:
+Maintaining the website
 
-```bash
+This is a static HTML, CSS, and JavaScript site hosted on GitHub Pages. No package installation or build step is required.
+
+|File              |What it contains                                     |
+|------------------|-----------------------------------------------------|
+|`index.html`      |Home page, slideshow, intro SVG, and Contact section |
+|`about.html`      |Group introduction and partnership section           |
+|`calendar.html`   |Upcoming-event announcements                         |
+|`events.html`     |Event photography and original post links            |
+|`sponsorship.html`|Sponsorship and audience-information content         |
+|`style.css`       |Layout, colors, typography, and responsive styling   |
+|`site.js`         |Menu, slideshow, navigation, and intro timing        |
+|`intro-motion.js` |Infinity track, arrow movement, and color transitions|
+|`assets/`         |Logo files and photography                           |
+
+To preview locally, run this command from the repository folder:
+
 python3 -m http.server 8000
-```
 
-Then visit `http://localhost:8000/`.
+Then open http://localhost:8000/.
 
-## Current content
+For branch-based GitHub Pages publishing, select main and /(root) under Settings → Pages. Keep index.html at the repository root. Relative links allow the site to work at its current repository URL or on a custom domain.
 
-Calendar dates are still awaiting confirmation. Contact currently opens Instagram; there is no submission form or backend. Sponsorship demographics are not populated with unverified figures. This export preserves the current content rather than inventing those details.
+Photography and branding
 
-## Assets
-
-The logo and photographs were supplied for this project. Preserve applicable ownership and permissions when publishing or redistributing them. No new asset license is assigned by this export.
+The logo and photography were supplied for this project. Event images link back to their original Instagram posts where available. Ownership remains with the respective creators; inclusion in this repository does not grant permission to reuse the assets elsewhere.
