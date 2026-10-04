@@ -43,13 +43,6 @@ This is a static HTML, CSS, and JavaScript site hosted on GitHub Pages. No packa
 |`intro-motion.js` |Infinity track, arrow movement, and color transitions|
 |`assets/`         |Logo files and photography                           |
 
-To preview locally, run this command from the repository folder:
-
-python3 -m http.server 8000
-
-Then open http://localhost:8000/.
-
-For branch-based GitHub Pages publishing, select main and /(root) under Settings → Pages. Keep index.html at the repository root. Relative links allow the site to work at its current repository URL or on a custom domain.
 
 Photography and branding
 
